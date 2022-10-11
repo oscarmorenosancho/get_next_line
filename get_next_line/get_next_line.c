@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/10 12:49:11 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/11 18:19:23 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,65 +14,59 @@
 #include <stdio.h>
 #include <fcntl.h>
 
-char	*ft_get_next_chunk(int fd, size_t size, int *eof_flag, int *err_flag )
+int	ft_get_next_chunk(int fd, size_t size, char **chunk)
 {
-	char	*chunk;
-	size_t	read_ret;
+	int		read_ret;
 
-	*eof_flag = 0;
-	*err_flag = 1;
-	chunk = (char *)malloc(size + 1);
-	if (! chunk)
-		return (NULL);
-	read_ret = read(fd, chunk, size);
-	*eof_flag = (read_ret < size);
-	*err_flag = read_ret < 0;
+	read_ret = -1000;
+	*chunk = (char *)malloc(size + 1);
+	if (! *chunk)
+		return (read_ret);
+	read_ret = read(fd, *chunk, size);
 	if (read_ret <= 0)
 	{
-		free(chunk);
-		chunk = NULL;
+		free(*chunk);
+		*chunk = NULL;
 	}
 	else
-		chunk[read_ret] = 0;
-	return (chunk);
+		(*chunk)[read_ret] = 0;
+	return (read_ret);
 }
 
-char	*ft_append_chunk_to_buf(char **buffer, char **chunk)
+char	*ft_append_chunk_to_buf(int fd, char **buffer, int *read_ret)
 {
 	char	*new_buf;
+	char	*new_chunk;
 
+	*read_ret = ft_get_next_chunk(fd, BUFFER_SIZE, &new_chunk);
 	if (! *buffer)
-		*buffer = *chunk;
-	else if (*chunk)
+		*buffer = new_chunk;
+	else if (new_chunk)
 	{
-		new_buf = ft_strjoin(*buffer, *chunk);
-		if (! new_buf)
-			return (NULL);
+		new_buf = ft_strjoin(*buffer, new_chunk);
+		free (new_chunk);
 		free (*buffer);
-		if (*chunk)
-			free (*chunk);
 		*buffer = new_buf;
 	}
 	return (*buffer);
 }
 
-char	*ft_extract_line_from_buf(char **buffer)
+char	*ft_extract_line_from_buf(char **buffer, size_t	buf_size)
 {
 	char	*p;
 	char	*line;
 	size_t	line_size;
-	size_t	buf_size;
 
-	buf_size = ft_strlen(*buffer);
+	if (! *buffer)
+		return (NULL);
 	p = ft_strchr(*buffer, '\n');
 	if (! p)
 		return (NULL);
-	line = ft_substr(*buffer, 0, p - *buffer + 1);
+	line_size = p - *buffer + 1;
+	line = ft_substr_empty2null(*buffer, 0, line_size, 1);
 	if (!line)
 		return (NULL);
-	p++;
-	line_size = p - *buffer;
-	p = ft_substr(*buffer, line_size, buf_size);
+	p = ft_substr_empty2null(*buffer, line_size, buf_size, 0);
 	if (p)
 	{
 		if (*buffer)
@@ -85,31 +79,28 @@ char	*ft_extract_line_from_buf(char **buffer)
 char	*get_next_line(int fd)
 {
 	static char	*buffer;
-	char		*new_chunk;
 	char		*line;
-	int			eof_flag;
-	int			err_flag;
+	int			read_ret;
 
 	if (fd < 0 || BUFFER_SIZE < 1)
 		return (NULL);
-	eof_flag = 0;
-	while (! eof_flag)
+	read_ret = 1;
+	line = NULL;
+	while ((read_ret > 0) && !line)
 	{
-		new_chunk = ft_get_next_chunk(fd, BUFFER_SIZE, &eof_flag, &err_flag);
-		if (err_flag)
-			return (NULL);
-		if (new_chunk)
-			ft_append_chunk_to_buf(&buffer, &new_chunk);
-		line = NULL;
-		if (buffer)
+		if (ft_append_chunk_to_buf(fd, &buffer, &read_ret) && read_ret >= 0)
+			line = ft_extract_line_from_buf(&buffer, ft_strlen(buffer));
+		if (!line && buffer && read_ret == 0)
 		{
-			line = ft_extract_line_from_buf(&buffer);
+			line = buffer;
+			buffer = NULL;
 		}
-		if (line)
-			return (line);
 	}
-	line = buffer;
-	buffer = NULL;
+	if (read_ret < 0 && line)
+	{
+		free (line);
+		line = NULL;
+	}
 	return (line);
 }
 
@@ -121,21 +112,28 @@ int	main(int argc, char const *argv[])
 	char	*line;
 	int		i;
 
-	filename = "test";
+	fd = 0;
 	if (argc == 2)
 	{
 		filename = (char *)argv[1];
 		fd = open(filename, O_RDONLY);
+		printf("main: using file:\n%s\n", filename);
 	}
 	else
-		fd = 0;
+		printf("main: using stdin:\n");
 	if (fd < 0)
 		return (0);
 	i = 0;
 	printf("\n--main: line %d search\n", i);
 	line = get_next_line(fd);
-	while (line){
+	while (line)
+	{
 		printf("main: get_next_line:\n%s\n", line);
+		if (line)
+		{
+			free(line);
+			line = NULL;
+		}
 		i++;
 		printf("main: loop %d\n", i);
 		line = get_next_line(fd);

@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:49:28 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/10 11:56:45 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/11 18:18:31 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (0);
 }
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr_empty2null(char const *s, unsigned int start,
+	size_t len, int empty2null)
 {
 	char	*p;
 	char	*ss;
@@ -80,7 +81,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		p = (char *)s + s_len;
 		ss_len = 0;
 	}
-	ss = malloc(ss_len + 1);
+	ss = NULL;
+	if (ss_len > 0 || ! empty2null)
+		ss = malloc(ss_len + 1);
 	if (ss)
 	{
 		ft_memcpy(ss, p, ss_len);
