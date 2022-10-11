@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/11 18:19:23 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/11 18:57:18 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ char	*get_next_line(int fd)
 			buffer = NULL;
 		}
 	}
-	if (read_ret < 0 && line)
+	if (line && (read_ret < 0 || !line[0]))
 	{
 		free (line);
 		line = NULL;
