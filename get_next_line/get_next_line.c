@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/11 18:57:18 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/13 19:48:50 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,37 @@
 #include <stdio.h>
 #include <fcntl.h>
 
-int	ft_get_next_chunk(int fd, size_t size, char **chunk)
+#define MIN_CHUNK_SIZE 42
+#define FAIL_MEM_ALLOC_READ_RET	-1000
+
+int	ft_get_next_chunk(int fd, char **chunk, \
+	size_t	chunk_size, size_t	buffer_size)
 {
 	int		read_ret;
+	size_t	total_read;
 
-	read_ret = -1000;
-	*chunk = (char *)malloc(size + 1);
+	read_ret = 1;
+	total_read = 0;
+	if (buffer_size > chunk_size)
+		chunk_size = buffer_size;
+	*chunk = (char *)malloc(chunk_size + 1);
 	if (! *chunk)
-		return (read_ret);
-	read_ret = read(fd, *chunk, size);
-	if (read_ret <= 0)
+		return (FAIL_MEM_ALLOC_READ_RET);
+	//while (read_ret > 0 && (chunk_size - total_read) > buffer_size)
 	{
-		free(*chunk);
-		*chunk = NULL;
+		read_ret = read(fd, *chunk + total_read, buffer_size);
+		if (read_ret > 0)
+			total_read += read_ret;
+		if (read_ret < 0 || total_read == 0)
+		{
+			free(*chunk);
+			*chunk = NULL;
+			total_read = read_ret;
+		}
+		else
+			(*chunk)[total_read] = 0;
 	}
-	else
-		(*chunk)[read_ret] = 0;
-	return (read_ret);
+	return (total_read);
 }
 
 char	*ft_append_chunk_to_buf(int fd, char **buffer, int *read_ret)
@@ -38,7 +52,7 @@ char	*ft_append_chunk_to_buf(int fd, char **buffer, int *read_ret)
 	char	*new_buf;
 	char	*new_chunk;
 
-	*read_ret = ft_get_next_chunk(fd, BUFFER_SIZE, &new_chunk);
+	*read_ret = ft_get_next_chunk(fd, &new_chunk, MIN_CHUNK_SIZE, BUFFER_SIZE);
 	if (! *buffer)
 		*buffer = new_chunk;
 	else if (new_chunk)
@@ -104,7 +118,7 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-int	main(int argc, char const *argv[])
+/*int	main(int argc, char const *argv[])
 {
 	int		fd;
 	int		close_res;
@@ -142,4 +156,4 @@ int	main(int argc, char const *argv[])
 	if (! close_res)
 		printf("close failed");
 	return (0);
-}
+}*/
