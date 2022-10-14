@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/13 19:48:50 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/14 18:06:43 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_get_next_chunk(int fd, char **chunk, \
 	*chunk = (char *)malloc(chunk_size + 1);
 	if (! *chunk)
 		return (FAIL_MEM_ALLOC_READ_RET);
-	//while (read_ret > 0 && (chunk_size - total_read) > buffer_size)
+	while (read_ret > 0 && (chunk_size - total_read) >= buffer_size)
 	{
 		read_ret = read(fd, *chunk + total_read, buffer_size);
 		if (read_ret > 0)
@@ -53,13 +53,19 @@ char	*ft_append_chunk_to_buf(int fd, char **buffer, int *read_ret)
 	char	*new_chunk;
 
 	*read_ret = ft_get_next_chunk(fd, &new_chunk, MIN_CHUNK_SIZE, BUFFER_SIZE);
-	if (! *buffer)
-		*buffer = new_chunk;
-	else if (new_chunk)
+	if (! *buffer && ! new_chunk)
+		return (NULL);
+	if (new_chunk)
 	{
-		new_buf = ft_strjoin(*buffer, new_chunk);
+		if (*buffer)
+		{
+			new_buf = ft_strjoin(*buffer, new_chunk);
+			free (*buffer);
+			*buffer = NULL;
+		}
+		else
+			new_buf = ft_strjoin("", new_chunk);
 		free (new_chunk);
-		free (*buffer);
 		*buffer = new_buf;
 	}
 	return (*buffer);
@@ -118,7 +124,7 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-/*int	main(int argc, char const *argv[])
+int	main(int argc, char const *argv[])
 {
 	int		fd;
 	int		close_res;
@@ -156,4 +162,4 @@ char	*get_next_line(int fd)
 	if (! close_res)
 		printf("close failed");
 	return (0);
-}*/
+}
