@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/23 13:05:09 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/23 13:26:55 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,12 +146,13 @@ char	*get_next_line(int fd)
 void	ft_print_node_info(t_chunk_node *c_n)
 {
 	printf("\nc_n: %p\n", c_n);
-	printf("c_n->content: %p\n", c_n->content);
+	printf("c_n->content pointer: %p\n", c_n->content);
 	if (c_n->content)
-		printf("c_n->content: %s\n", c_n->content);
+		printf("c_n->content string: %s(string end)\n", c_n->content);
 	printf("c_n->cont_size: %lu\n", c_n->cont_size);
+	printf("c_n->line_sep pointer: %p\n", c_n->line_sep);
 	if (c_n->line_sep)
-		printf("c_n->line_sep: %p\n", c_n->line_sep);
+		printf("c_n->line_sep string: %s(string end)\n", c_n->line_sep);
 	printf("c_n->next: %p\n", c_n->next);
 	if (c_n->next)
 		ft_print_node_info(c_n->next);
@@ -164,12 +165,12 @@ void	ft_print_info(t_buffer_info *b_i)
 	printf("b_i->buffer_size: %lu\n", b_i->buffer_size);
 	printf("b_i->chunk_last: %p\n", b_i->chunk_last);
 	printf("b_i->chunk_list: %p\n", b_i->chunk_list);
-	printf("b_i->line: %p\n", b_i->line);
+	printf("b_i->line pointer: %p\n", b_i->line);
 	if (b_i->line)
-		printf("b_i->line: %s\n", b_i->line);
-	printf("b_i->line_end: %p\n", b_i->line_end);
+		printf("b_i->line string: %s(string end)\n", b_i->line);
+	printf("b_i->line_end pointer: %p\n", b_i->line_end);
 	if (b_i->line_end)
-		printf("b_i->line_end: %s\n", b_i->line_end);
+		printf("b_i->line_end string: %s(string end)\n", b_i->line_end);
 	printf("b_i->read_res: %ld\n", b_i->read_res);
 	if (b_i->chunk_list)
 		ft_print_node_info(b_i->chunk_list);
