@@ -1,0 +1,8115 @@
+main: using file:
+variable_nls.txt
+
+--main: line 0 search
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 0
+b_i->buffer_size: 0
+b_i->chunk_last: 0x0
+b_i->chunk_list: 0x0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x0
+b_i->chunk_list: 0x0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 
+012345678
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405820
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 
+012345678
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405820
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f9248405830
+b_i->line: 
+b_i->line_end: 0x7f9248405830
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 
+012345678
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405820
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f9248405830
+b_i->line: 
+b_i->line_end: 0x7f9248405830
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 
+012345678
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405820
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f9248405830
+b_i->line: 
+
+b_i->line_end: 0x7f9248405831
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f9248405830
+b_i->line: 
+
+b_i->line_end: 0x7f9248405831
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+
+
+main: loop 1
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f9248405830
+b_i->line: 
+
+b_i->line_end: 0x7f9248405831
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405840
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405840
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405860
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405860
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 9x2
+012345
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058e3
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 9x2
+012345
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058e3
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f92484058f0
+b_i->line: 
+b_i->line_end: 0x7f92484058f0
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 9x2
+012345
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058e3
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f92484058f0
+b_i->line: 012345678
+b_i->line_end: 0x7f92484058f9
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 9x2
+012345
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058e3
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678
+b_i->line_end: 0x7f9248405903
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 9x2
+012345
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058e3
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f92484058f0
+b_i->line: 01234567890123456789012345678
+b_i->line_end: 0x7f924840590d
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 9x2
+012345
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058e3
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f92484058f0
+b_i->line: 012345678901234567890123456789012345678
+b_i->line_end: 0x7f9248405917
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 9x2
+012345
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058e3
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405800
+b_i->line: 0x7f92484058f0
+b_i->line: 012345678901234567890123456789012345678
+b_i->line_end: 0x7f9248405917
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 012345678
+c_n->cont_size: 9
+c_n->next: 0x7f9248405840
+
+c_n: 0x7f9248405840
+c_n->content: 0x7f9248405830
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 9012345678
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 9x2
+012345
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058e3
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x2
+
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x2
+
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+0123456789012345678901234567890123456789x2
+
+main: loop 2
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x2
+
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405830
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405830
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405860
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405860
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 6789x3
+
+01
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058b6
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 6789x3
+
+01
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058b6
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x2
+
+b_i->line_end: 0x7f92484058f0
+b_i->line_end: 0123456789012345678901234567890123456789x2
+
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 6789x3
+
+01
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058b6
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x7f92484058f0
+b_i->line: 012345
+b_i->line_end: 0x7f92484058f6
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 6789x3
+
+01
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058b6
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345
+b_i->line_end: 0x7f9248405900
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 6789x3
+
+01
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058b6
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x7f92484058f0
+b_i->line: 01234567890123456789012345
+b_i->line_end: 0x7f924840590a
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 6789x3
+
+01
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058b6
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x7f92484058f0
+b_i->line: 012345678901234567890123456789012345
+b_i->line_end: 0x7f9248405914
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 6789x3
+
+01
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058b6
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f92484058c0
+b_i->line: 0x7f92484058f0
+b_i->line: 012345678901234567890123456789012345
+b_i->line_end: 0x7f9248405914
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 012345
+c_n->cont_size: 6
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 6789012345
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 6789x3
+
+01
+c_n->cont_size: 10
+c_n->line_sep: 0x7f92484058b6
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x3
+
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x3
+
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+0123456789012345678901234567890123456789x3
+
+main: loop 3
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x3
+
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405830
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405830
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405860
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405860
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405920
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405920
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405920
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x3
+
+b_i->line_end: 0x7f92484058f0
+b_i->line_end: 0123456789012345678901234567890123456789x3
+
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405920
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x3
+
+b_i->line_end: 0x7f92484058f0
+b_i->line_end: 0123456789012345678901234567890123456789x3
+
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 
+01
+c_n->cont_size: 3
+c_n->line_sep: 0x7f92484058b0
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405920
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 
+
+b_i->line_end: 0x7f92484058f1
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405920
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 
+
+b_i->line_end: 0x7f92484058f1
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+
+
+main: loop 4
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405920
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 
+
+b_i->line_end: 0x7f92484058f1
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405920
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405950
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405950
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405980
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405980
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059b0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059b0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 
+
+b_i->line_end: 0x7f92484058f0
+b_i->line_end: 
+
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 01
+b_i->line_end: 0x7f92484058f2
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 012345678901
+b_i->line_end: 0x7f92484058fc
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901
+b_i->line_end: 0x7f9248405906
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 01234567890123456789012345678901
+b_i->line_end: 0x7f9248405910
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x5
+b_i->line_end: 0x7f924840591a
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405890
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x5
+b_i->line_end: 0x7f924840591a
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 01
+c_n->cont_size: 2
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 2345678901
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 23456789x5
+c_n->cont_size: 10
+c_n->next: 0x7f9248405920
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+
+0123456
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x5
+
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x5
+
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+0123456789012345678901234567890123456789x5
+
+main: loop 5
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456789x5
+
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484059e0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405800
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405830
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405830
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405860
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405860
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f9248405890
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 10
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 2
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 2
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f9248405a40
+b_i->line: 
+b_i->line_end: 0x7f9248405a40
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f9248405a40
+b_i->line: 
+b_i->line_end: 0x7f9248405a40
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+
+0123456
+c_n->cont_size: 9
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f9248405a40
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a41
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+0123456
+c_n->cont_size: 8
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f9248405a40
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a41
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+0123456
+c_n->cont_size: 8
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+
+
+main: loop 6
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f9248405a40
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a41
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+0123456
+c_n->cont_size: 8
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+0123456
+c_n->cont_size: 8
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+0123456
+c_n->cont_size: 8
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+0123456
+c_n->cont_size: 8
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 
+b_i->line_end: 0x7f92484058f0
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+0123456
+c_n->cont_size: 8
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 
+b_i->line_end: 0x7f92484058f0
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 
+0123456
+c_n->cont_size: 8
+c_n->line_sep: 0x7f9248405940
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 
+
+b_i->line_end: 0x7f92484058f1
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 
+
+b_i->line_end: 0x7f92484058f1
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+
+
+main: loop 7
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 
+
+b_i->line_end: 0x7f92484058f1
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 
+b_i->line_end: 0x7f92484058f0
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456
+b_i->line_end: 0x7f92484058f7
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 01234567890123456
+b_i->line_end: 0x7f9248405901
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 012345678901234567890123456
+b_i->line_end: 0x7f924840590b
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456
+b_i->line_end: 0x7f9248405915
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f9248405920
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345678901234567890123456
+b_i->line_end: 0x7f9248405915
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f9248405920
+c_n->content: 0x7f9248405940
+c_n->content: 0123456
+c_n->cont_size: 7
+c_n->next: 0x7f9248405950
+
+c_n: 0x7f9248405950
+c_n->content: 0x7f9248405970
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f9248405980
+
+c_n: 0x7f9248405980
+c_n->content: 0x7f92484059a0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059b0
+
+c_n: 0x7f92484059b0
+c_n->content: 0x7f92484059d0
+c_n->content: 7890123456
+c_n->cont_size: 10
+c_n->next: 0x7f92484059e0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 789x8
+
+
+
+0
+c_n->cont_size: 10
+c_n->line_sep: 0x7f9248405a05
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+
+0
+c_n->cont_size: 4
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+
+0
+c_n->cont_size: 4
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+0123456789012345
+main: loop 8
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f92484058f0
+b_i->line: 0123456789012345
+b_i->line_end: 0x7f924840591b
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+
+0
+c_n->cont_size: 4
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+
+0
+c_n->cont_size: 4
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+
+0
+c_n->cont_size: 4
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+
+0
+c_n->cont_size: 4
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+b_i->line_end: 0x7f9248405a30
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+
+0
+c_n->cont_size: 4
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+b_i->line_end: 0x7f9248405a30
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+
+0
+c_n->cont_size: 4
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a31
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+0
+c_n->cont_size: 3
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a31
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+0
+c_n->cont_size: 3
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+
+
+main: loop 9
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a31
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+0
+c_n->cont_size: 3
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+0
+c_n->cont_size: 3
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+0
+c_n->cont_size: 3
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+0
+c_n->cont_size: 3
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+b_i->line_end: 0x7f9248405a30
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+0
+c_n->cont_size: 3
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+b_i->line_end: 0x7f9248405a30
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+
+0
+c_n->cont_size: 3
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a31
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+0
+c_n->cont_size: 2
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a31
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+0
+c_n->cont_size: 2
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+
+
+main: loop 10
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a31
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+0
+c_n->cont_size: 2
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+0
+c_n->cont_size: 2
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+0
+c_n->cont_size: 2
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+0
+c_n->cont_size: 2
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+b_i->line_end: 0x7f9248405a30
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+0
+c_n->cont_size: 2
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+b_i->line_end: 0x7f9248405a30
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 
+0
+c_n->cont_size: 2
+c_n->line_sep: 0x7f9248405a00
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_extract_end_line_from_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a31
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a31
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+main: get_next_line:
+
+
+main: loop 11
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+
+b_i->line_end: 0x7f9248405a31
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_append_next_chunk before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 
+b_i->line_end: 0x7f9248405a30
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 0
+b_i->line_end: 0x7f9248405a31
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 01234567890
+b_i->line_end: 0x7f9248405a3b
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 012345678901234567890
+b_i->line_end: 0x7f9248405a45
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 0123456789012345678901234567890
+b_i->line_end: 0x7f9248405a4f
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line at iteration:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 0123456789012345678901234567890123456789x
+b_i->line_end: 0x7f9248405a59
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+ft_pop_next_line after iterations:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x7f92484058c0
+b_i->chunk_list: 0x7f92484059e0
+b_i->line: 0x7f9248405a30
+b_i->line: 0123456789012345678901234567890123456789x12
+b_i->line_end: 0x7f9248405a5b
+b_i->line_end: 
+b_i->read_res: 0
+
+c_n: 0x7f92484059e0
+c_n->content: 0x7f9248405a00
+c_n->content: 0
+c_n->cont_size: 1
+c_n->next: 0x7f9248405800
+
+c_n: 0x7f9248405800
+c_n->content: 0x7f9248405820
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405830
+
+c_n: 0x7f9248405830
+c_n->content: 0x7f9248405850
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405860
+
+c_n: 0x7f9248405860
+c_n->content: 0x7f9248405880
+c_n->content: 1234567890
+c_n->cont_size: 10
+c_n->next: 0x7f9248405890
+
+c_n: 0x7f9248405890
+c_n->content: 0x7f92484058b0
+c_n->content: 123456789x
+c_n->cont_size: 10
+c_n->next: 0x7f92484058c0
+
+c_n: 0x7f92484058c0
+c_n->content: 0x7f92484058e0
+c_n->content: 12
+c_n->cont_size: 2
+c_n->next: 0x0
+chunk list end -----
+
+get_next_line before return:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x0
+b_i->chunk_list: 0x0
+b_i->line: 0x7f9248405a30
+b_i->line: 0123456789012345678901234567890123456789x12
+b_i->line_end: 0x7f9248405a5b
+b_i->line_end: 
+b_i->read_res: 0
+chunk list end -----
+main: get_next_line:
+0123456789012345678901234567890123456789x12
+main: loop 12
+
+get_next_line at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x0
+b_i->chunk_list: 0x0
+b_i->line: 0x7f9248405a30
+b_i->line: 0123456789012345678901234567890123456789x12
+b_i->line_end: 0x7f9248405a5b
+b_i->line_end: 
+b_i->read_res: 0
+chunk list end -----
+
+ft_append_next_chunk at start:
+
+Info -----
+b_i->fd: 3
+b_i->buffer_size: 10
+b_i->chunk_last: 0x0
+b_i->chunk_list: 0x0
+b_i->line: 0x0
+b_i->line_end: 0x0
+b_i->read_res: 0
+chunk list end -----
+
+
+
+at stderror
+a.out(81725,0x11078fdc0) malloc: Incorrect checksum for freed object 0x7f9248405a48: probably modified after being freed.
+Corrupt value: 0x3130393837363534
+a.out(81725,0x11078fdc0) malloc: *** set a breakpoint in malloc_error_break to debug
+zsh: abort      ./a.out variable_nls.txt > res.out
