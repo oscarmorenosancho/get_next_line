@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/24 17:41:54 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/24 18:10:38 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -210,7 +210,7 @@ int	main(int argc, char const *argv[])
 	line = get_next_line(fd);
 	while (line)
 	{
-		printf("main: get_next_line:\n%s\n", line);
+		printf("main: get_next_line result:\n(str start)%s(str end)\n", line);
 		if (line)
 		{
 			free(line);
