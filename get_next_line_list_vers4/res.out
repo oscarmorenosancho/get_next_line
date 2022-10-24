@@ -1,0 +1,3977 @@
+main: using file:
+variable_nls.txt
+
+--main: line 0 search
+
+	get_next_line at start:
+
+	Info -----
+	b_i->fd: 0
+	b_i->buffer_size: 0
+	b_i->chunk_last: 0x0
+	b_i->chunk_list: 0x0
+	b_i->line pointer: 0x0
+	b_i->line_end pointer: 0x0
+	b_i->line_size: 0
+	b_i->read_res: 0
+
+	chunk list start -----
+
+	chunk list end -----
+	End Info -----
+
+		ft_append_next_chunk at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x0
+		b_i->chunk_list: 0x0
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 0
+		b_i->read_res: 0
+
+		chunk list start -----
+
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk after malloc:
+
+		ft_append_next_chunk before read:
+
+			ft_read_chunk at start:
+
+			ft_read_chunk before malloc:
+
+			ft_read_chunk after malloc:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before return:
+
+		ft_append_next_chunk after read:
+
+		ft_append_next_chunk after strchr:
+
+		ft_append_next_chunk before return:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 1
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)
+0123456789012345678901234567890123456789x2
+012345(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405820
+			c_n->line_sep string: (str start)
+0123456789012345678901234567890123456789x2
+012345(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 1
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)
+0123456789012345678901234567890123456789x2
+012345(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405820
+			c_n->line_sep string: (str start)
+0123456789012345678901234567890123456789x2
+012345(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x7fcbd5405860
+		b_i->line string: (str start)(str end)
+		b_i->line_end pointer: 0x7fcbd5405860
+		b_i->line_end string: (str start)(str end)
+		b_i->line_size: 1
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)
+0123456789012345678901234567890123456789x2
+012345(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405820
+			c_n->line_sep string: (str start)
+0123456789012345678901234567890123456789x2
+012345(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+			ft_extract_end_line_from_chunk at start:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405800
+			b_i->chunk_list: 0x7fcbd5405800
+			b_i->line pointer: 0x7fcbd5405860
+			b_i->line string: (str start)(str end)
+			b_i->line_end pointer: 0x7fcbd5405860
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 1
+			b_i->read_res: 50
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)
+0123456789012345678901234567890123456789x2
+012345(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd5405820
+				c_n->line_sep string: (str start)
+0123456789012345678901234567890123456789x2
+012345(str end)
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+			ft_extract_end_line_from_chunk before return:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405800
+			b_i->chunk_list: 0x7fcbd5405800
+			b_i->line pointer: 0x7fcbd5405860
+			b_i->line string: (str start)
+(str end)
+			b_i->line_end pointer: 0x7fcbd5405861
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 1
+			b_i->read_res: 50
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)0123456789012345678901234567890123456789x2
+012345(str end)
+				c_n->cont_size: 49
+				c_n->line_sep pointer: 0x7fcbd540584a
+				c_n->line_sep string: (str start)
+012345(str end)
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+get_next_line before return:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405800
+	b_i->chunk_list: 0x7fcbd5405800
+	b_i->line pointer: 0x7fcbd5405860
+	b_i->line string: (str start)
+(str end)
+	b_i->line_end pointer: 0x7fcbd5405861
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 1
+	b_i->read_res: 50
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)0123456789012345678901234567890123456789x2
+012345(str end)
+		c_n->cont_size: 49
+		c_n->line_sep pointer: 0x7fcbd540584a
+		c_n->line_sep string: (str start)
+012345(str end)
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+main: get_next_line:
+
+
+main: loop 1
+
+	get_next_line at start:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405800
+	b_i->chunk_list: 0x7fcbd5405800
+	b_i->line pointer: 0x7fcbd5405860
+	b_i->line string: (str start)
+(str end)
+	b_i->line_end pointer: 0x7fcbd5405861
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 1
+	b_i->read_res: 50
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)0123456789012345678901234567890123456789x2
+012345(str end)
+		c_n->cont_size: 49
+		c_n->line_sep pointer: 0x7fcbd540584a
+		c_n->line_sep string: (str start)
+012345(str end)
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+
+		ft_append_next_chunk at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 49
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)0123456789012345678901234567890123456789x2
+012345(str end)
+			c_n->cont_size: 49
+			c_n->line_sep pointer: 0x7fcbd540584a
+			c_n->line_sep string: (str start)
+012345(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk after malloc:
+
+		ft_append_next_chunk before read:
+
+			ft_read_chunk at start:
+
+			ft_read_chunk before malloc:
+
+			ft_read_chunk after malloc:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before return:
+
+		ft_append_next_chunk after read:
+
+		ft_append_next_chunk after strchr:
+
+		ft_append_next_chunk before return:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405870
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 86
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)0123456789012345678901234567890123456789x2
+012345(str end)
+			c_n->cont_size: 49
+			c_n->line_sep pointer: 0x7fcbd540584a
+			c_n->line_sep string: (str start)
+012345(str end)
+			c_n->next: 0x7fcbd5405870
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd54058b4
+			c_n->line_sep string: (str start)
+
+012345678901(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405870
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 86
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)0123456789012345678901234567890123456789x2
+012345(str end)
+			c_n->cont_size: 49
+			c_n->line_sep pointer: 0x7fcbd540584a
+			c_n->line_sep string: (str start)
+012345(str end)
+			c_n->next: 0x7fcbd5405870
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd54058b4
+			c_n->line_sep string: (str start)
+
+012345678901(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405870
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x7fcbd54058d0
+		b_i->line string: (str start)(str end)
+		b_i->line_end pointer: 0x7fcbd54058d0
+		b_i->line_end string: (str start)(str end)
+		b_i->line_size: 86
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)0123456789012345678901234567890123456789x2
+012345(str end)
+			c_n->cont_size: 49
+			c_n->line_sep pointer: 0x7fcbd540584a
+			c_n->line_sep string: (str start)
+012345(str end)
+			c_n->next: 0x7fcbd5405870
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd54058b4
+			c_n->line_sep string: (str start)
+
+012345678901(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+			ft_extract_end_line_from_chunk at start:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405870
+			b_i->chunk_list: 0x7fcbd5405800
+			b_i->line pointer: 0x7fcbd54058d0
+			b_i->line string: (str start)(str end)
+			b_i->line_end pointer: 0x7fcbd54058d0
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 86
+			b_i->read_res: 50
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)0123456789012345678901234567890123456789x2
+012345(str end)
+				c_n->cont_size: 49
+				c_n->line_sep pointer: 0x7fcbd540584a
+				c_n->line_sep string: (str start)
+012345(str end)
+				c_n->next: 0x7fcbd5405870
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405870
+				c_n->content pointer: 0x7fcbd5405890
+				c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd54058b4
+				c_n->line_sep string: (str start)
+
+012345678901(str end)
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+			ft_extract_end_line_from_chunk before return:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405870
+			b_i->chunk_list: 0x7fcbd5405800
+			b_i->line pointer: 0x7fcbd54058d0
+			b_i->line string: (str start)0123456789012345678901234567890123456789x2
+(str end)
+			b_i->line_end pointer: 0x7fcbd54058fb
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 86
+			b_i->read_res: 50
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)012345(str end)
+				c_n->cont_size: 6
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x7fcbd5405870
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405870
+				c_n->content pointer: 0x7fcbd5405890
+				c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd54058b4
+				c_n->line_sep string: (str start)
+
+012345678901(str end)
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+get_next_line before return:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405870
+	b_i->chunk_list: 0x7fcbd5405800
+	b_i->line pointer: 0x7fcbd54058d0
+	b_i->line string: (str start)0123456789012345678901234567890123456789x2
+(str end)
+	b_i->line_end pointer: 0x7fcbd54058fb
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 86
+	b_i->read_res: 50
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)012345(str end)
+		c_n->cont_size: 6
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x7fcbd5405870
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405870
+		c_n->content pointer: 0x7fcbd5405890
+		c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd54058b4
+		c_n->line_sep string: (str start)
+
+012345678901(str end)
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+main: get_next_line:
+0123456789012345678901234567890123456789x2
+
+main: loop 2
+
+	get_next_line at start:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405870
+	b_i->chunk_list: 0x7fcbd5405800
+	b_i->line pointer: 0x7fcbd54058d0
+	b_i->line string: (str start)0123456789012345678901234567890123456789x2
+(str end)
+	b_i->line_end pointer: 0x7fcbd54058fb
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 86
+	b_i->read_res: 50
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)012345(str end)
+		c_n->cont_size: 6
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x7fcbd5405870
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405870
+		c_n->content pointer: 0x7fcbd5405890
+		c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd54058b4
+		c_n->line_sep string: (str start)
+
+012345678901(str end)
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+
+		ft_append_next_chunk at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405870
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 6
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)012345(str end)
+			c_n->cont_size: 6
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405870
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd54058b4
+			c_n->line_sep string: (str start)
+
+012345678901(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk after malloc:
+
+		ft_append_next_chunk before read:
+
+			ft_read_chunk at start:
+
+			ft_read_chunk before malloc:
+
+			ft_read_chunk after malloc:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before return:
+
+		ft_append_next_chunk after read:
+
+		ft_append_next_chunk after strchr:
+
+		ft_append_next_chunk before return:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405930
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 37
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)012345(str end)
+			c_n->cont_size: 6
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405870
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd54058b4
+			c_n->line_sep string: (str start)
+
+012345678901(str end)
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405930
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 37
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)012345(str end)
+			c_n->cont_size: 6
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405870
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd54058b4
+			c_n->line_sep string: (str start)
+
+012345678901(str end)
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405930
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x7fcbd5405990
+		b_i->line string: (str start)(str end)
+		b_i->line_end pointer: 0x7fcbd5405990
+		b_i->line_end string: (str start)(str end)
+		b_i->line_size: 37
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)012345(str end)
+			c_n->cont_size: 6
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405870
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd54058b4
+			c_n->line_sep string: (str start)
+
+012345678901(str end)
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405930
+		b_i->chunk_list: 0x7fcbd5405800
+		b_i->line pointer: 0x7fcbd5405990
+		b_i->line string: (str start)012345(str end)
+		b_i->line_end pointer: 0x7fcbd5405996
+		b_i->line_end string: (str start)(str end)
+		b_i->line_size: 37
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)012345(str end)
+			c_n->cont_size: 6
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405870
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd54058b4
+			c_n->line_sep string: (str start)
+
+012345678901(str end)
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+			ft_extract_end_line_from_chunk at start:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405930
+			b_i->chunk_list: 0x7fcbd5405800
+			b_i->line pointer: 0x7fcbd5405990
+			b_i->line string: (str start)012345(str end)
+			b_i->line_end pointer: 0x7fcbd5405996
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 37
+			b_i->read_res: 50
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)012345(str end)
+				c_n->cont_size: 6
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x7fcbd5405870
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405870
+				c_n->content pointer: 0x7fcbd5405890
+				c_n->content string: (str start)6789012345678901234567890123456789x3
+
+012345678901(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd54058b4
+				c_n->line_sep string: (str start)
+
+012345678901(str end)
+				c_n->next: 0x7fcbd5405930
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd540596e
+				c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+			ft_extract_end_line_from_chunk before return:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405930
+			b_i->chunk_list: 0x7fcbd5405870
+			b_i->line pointer: 0x7fcbd5405990
+			b_i->line string: (str start)0123456789012345678901234567890123456789x3
+(str end)
+			b_i->line_end pointer: 0x7fcbd54059bb
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 37
+			b_i->read_res: 50
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405870
+				c_n->content pointer: 0x7fcbd5405890
+				c_n->content string: (str start)
+012345678901(str end)
+				c_n->cont_size: 13
+				c_n->line_sep pointer: 0x7fcbd5405890
+				c_n->line_sep string: (str start)
+012345678901(str end)
+				c_n->next: 0x7fcbd5405930
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd540596e
+				c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+get_next_line before return:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405930
+	b_i->chunk_list: 0x7fcbd5405870
+	b_i->line pointer: 0x7fcbd5405990
+	b_i->line string: (str start)0123456789012345678901234567890123456789x3
+(str end)
+	b_i->line_end pointer: 0x7fcbd54059bb
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 37
+	b_i->read_res: 50
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405870
+		c_n->content pointer: 0x7fcbd5405890
+		c_n->content string: (str start)
+012345678901(str end)
+		c_n->cont_size: 13
+		c_n->line_sep pointer: 0x7fcbd5405890
+		c_n->line_sep string: (str start)
+012345678901(str end)
+		c_n->next: 0x7fcbd5405930
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405930
+		c_n->content pointer: 0x7fcbd5405950
+		c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd540596e
+		c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+main: get_next_line:
+0123456789012345678901234567890123456789x3
+
+main: loop 3
+
+	get_next_line at start:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405930
+	b_i->chunk_list: 0x7fcbd5405870
+	b_i->line pointer: 0x7fcbd5405990
+	b_i->line string: (str start)0123456789012345678901234567890123456789x3
+(str end)
+	b_i->line_end pointer: 0x7fcbd54059bb
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 37
+	b_i->read_res: 50
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405870
+		c_n->content pointer: 0x7fcbd5405890
+		c_n->content string: (str start)
+012345678901(str end)
+		c_n->cont_size: 13
+		c_n->line_sep pointer: 0x7fcbd5405890
+		c_n->line_sep string: (str start)
+012345678901(str end)
+		c_n->next: 0x7fcbd5405930
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405930
+		c_n->content pointer: 0x7fcbd5405950
+		c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd540596e
+		c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+
+		ft_append_next_chunk at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405930
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 13
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)
+012345678901(str end)
+			c_n->cont_size: 13
+			c_n->line_sep pointer: 0x7fcbd5405890
+			c_n->line_sep string: (str start)
+012345678901(str end)
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk after malloc:
+
+		ft_append_next_chunk before read:
+
+			ft_read_chunk at start:
+
+			ft_read_chunk before malloc:
+
+			ft_read_chunk after malloc:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before return:
+
+		ft_append_next_chunk after read:
+
+		ft_append_next_chunk after strchr:
+
+		ft_append_next_chunk before return:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd54058d0
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 39
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)
+012345678901(str end)
+			c_n->cont_size: 13
+			c_n->line_sep pointer: 0x7fcbd5405890
+			c_n->line_sep string: (str start)
+012345678901(str end)
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd54058d0
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 39
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)
+012345678901(str end)
+			c_n->cont_size: 13
+			c_n->line_sep pointer: 0x7fcbd5405890
+			c_n->line_sep string: (str start)
+012345678901(str end)
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd54058d0
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x7fcbd5405990
+		b_i->line string: (str start)0123456789012345678901234567890123456789x3
+(str end)
+		b_i->line_end pointer: 0x7fcbd5405990
+		b_i->line_end string: (str start)0123456789012345678901234567890123456789x3
+(str end)
+		b_i->line_size: 39
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)
+012345678901(str end)
+			c_n->cont_size: 13
+			c_n->line_sep pointer: 0x7fcbd5405890
+			c_n->line_sep string: (str start)
+012345678901(str end)
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+			ft_extract_end_line_from_chunk at start:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd54058d0
+			b_i->chunk_list: 0x7fcbd5405870
+			b_i->line pointer: 0x7fcbd5405990
+			b_i->line string: (str start)0123456789012345678901234567890123456789x3
+(str end)
+			b_i->line_end pointer: 0x7fcbd5405990
+			b_i->line_end string: (str start)0123456789012345678901234567890123456789x3
+(str end)
+			b_i->line_size: 39
+			b_i->read_res: 50
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405870
+				c_n->content pointer: 0x7fcbd5405890
+				c_n->content string: (str start)
+012345678901(str end)
+				c_n->cont_size: 13
+				c_n->line_sep pointer: 0x7fcbd5405890
+				c_n->line_sep string: (str start)
+012345678901(str end)
+				c_n->next: 0x7fcbd5405930
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd540596e
+				c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+				c_n->next: 0x7fcbd54058d0
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd54058d0
+				c_n->content pointer: 0x7fcbd54058f0
+				c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd5405909
+				c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+			ft_extract_end_line_from_chunk before return:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd54058d0
+			b_i->chunk_list: 0x7fcbd5405870
+			b_i->line pointer: 0x7fcbd5405990
+			b_i->line string: (str start)
+(str end)
+			b_i->line_end pointer: 0x7fcbd5405991
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 39
+			b_i->read_res: 50
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405870
+				c_n->content pointer: 0x7fcbd5405890
+				c_n->content string: (str start)012345678901(str end)
+				c_n->cont_size: 12
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x7fcbd5405930
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd540596e
+				c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+				c_n->next: 0x7fcbd54058d0
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd54058d0
+				c_n->content pointer: 0x7fcbd54058f0
+				c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd5405909
+				c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+get_next_line before return:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd54058d0
+	b_i->chunk_list: 0x7fcbd5405870
+	b_i->line pointer: 0x7fcbd5405990
+	b_i->line string: (str start)
+(str end)
+	b_i->line_end pointer: 0x7fcbd5405991
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 39
+	b_i->read_res: 50
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405870
+		c_n->content pointer: 0x7fcbd5405890
+		c_n->content string: (str start)012345678901(str end)
+		c_n->cont_size: 12
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x7fcbd5405930
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405930
+		c_n->content pointer: 0x7fcbd5405950
+		c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd540596e
+		c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+		c_n->next: 0x7fcbd54058d0
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd54058d0
+		c_n->content pointer: 0x7fcbd54058f0
+		c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd5405909
+		c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+main: get_next_line:
+
+
+main: loop 4
+
+	get_next_line at start:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd54058d0
+	b_i->chunk_list: 0x7fcbd5405870
+	b_i->line pointer: 0x7fcbd5405990
+	b_i->line string: (str start)
+(str end)
+	b_i->line_end pointer: 0x7fcbd5405991
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 39
+	b_i->read_res: 50
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405870
+		c_n->content pointer: 0x7fcbd5405890
+		c_n->content string: (str start)012345678901(str end)
+		c_n->cont_size: 12
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x7fcbd5405930
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405930
+		c_n->content pointer: 0x7fcbd5405950
+		c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd540596e
+		c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+		c_n->next: 0x7fcbd54058d0
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd54058d0
+		c_n->content pointer: 0x7fcbd54058f0
+		c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd5405909
+		c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+
+		ft_append_next_chunk at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd54058d0
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 12
+		b_i->read_res: 50
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)012345678901(str end)
+			c_n->cont_size: 12
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk after malloc:
+
+		ft_append_next_chunk before read:
+
+			ft_read_chunk at start:
+
+			ft_read_chunk before malloc:
+
+			ft_read_chunk after malloc:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before return:
+
+		ft_append_next_chunk after read:
+
+		ft_append_next_chunk after strchr:
+
+		ft_append_next_chunk before return:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 34
+		b_i->read_res: 22
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)012345678901(str end)
+			c_n->cont_size: 12
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 34
+		b_i->read_res: 22
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)012345678901(str end)
+			c_n->cont_size: 12
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk after malloc:
+
+		ft_append_next_chunk before read:
+
+			ft_read_chunk at start:
+
+			ft_read_chunk before malloc:
+
+			ft_read_chunk after malloc:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before free:
+
+			ft_read_chunk after free:
+
+			ft_read_chunk before return:
+
+		ft_append_next_chunk after read:
+
+		ft_append_next_chunk before free:
+
+		ft_append_next_chunk before return:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 34
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)012345678901(str end)
+			c_n->cont_size: 12
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 34
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)012345678901(str end)
+			c_n->cont_size: 12
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x7fcbd5405990
+		b_i->line string: (str start)(str end)
+		b_i->line_end pointer: 0x7fcbd5405990
+		b_i->line_end string: (str start)(str end)
+		b_i->line_size: 34
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)012345678901(str end)
+			c_n->cont_size: 12
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405870
+		b_i->line pointer: 0x7fcbd5405990
+		b_i->line string: (str start)012345678901(str end)
+		b_i->line_end pointer: 0x7fcbd540599c
+		b_i->line_end string: (str start)(str end)
+		b_i->line_size: 34
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405870
+			c_n->content pointer: 0x7fcbd5405890
+			c_n->content string: (str start)012345678901(str end)
+			c_n->cont_size: 12
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd5405930
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd540596e
+			c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+			ft_extract_end_line_from_chunk at start:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405800
+			b_i->chunk_list: 0x7fcbd5405870
+			b_i->line pointer: 0x7fcbd5405990
+			b_i->line string: (str start)012345678901(str end)
+			b_i->line_end pointer: 0x7fcbd540599c
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 34
+			b_i->read_res: 0
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405870
+				c_n->content pointer: 0x7fcbd5405890
+				c_n->content string: (str start)012345678901(str end)
+				c_n->cont_size: 12
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x7fcbd5405930
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)2345678901234567890123456789x5
+
+
+01234567890123456(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd540596e
+				c_n->line_sep string: (str start)
+
+
+01234567890123456(str end)
+				c_n->next: 0x7fcbd54058d0
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd54058d0
+				c_n->content pointer: 0x7fcbd54058f0
+				c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd5405909
+				c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+				c_n->next: 0x7fcbd5405800
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)1234567890123456789x12(str end)
+				c_n->cont_size: 22
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+			ft_extract_end_line_from_chunk before return:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405800
+			b_i->chunk_list: 0x7fcbd5405930
+			b_i->line pointer: 0x7fcbd5405990
+			b_i->line string: (str start)0123456789012345678901234567890123456789x5
+(str end)
+			b_i->line_end pointer: 0x7fcbd54059bb
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 34
+			b_i->read_res: 0
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)
+
+01234567890123456(str end)
+				c_n->cont_size: 19
+				c_n->line_sep pointer: 0x7fcbd5405950
+				c_n->line_sep string: (str start)
+
+01234567890123456(str end)
+				c_n->next: 0x7fcbd54058d0
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd54058d0
+				c_n->content pointer: 0x7fcbd54058f0
+				c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd5405909
+				c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+				c_n->next: 0x7fcbd5405800
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)1234567890123456789x12(str end)
+				c_n->cont_size: 22
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+get_next_line before return:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405800
+	b_i->chunk_list: 0x7fcbd5405930
+	b_i->line pointer: 0x7fcbd5405990
+	b_i->line string: (str start)0123456789012345678901234567890123456789x5
+(str end)
+	b_i->line_end pointer: 0x7fcbd54059bb
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 34
+	b_i->read_res: 0
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405930
+		c_n->content pointer: 0x7fcbd5405950
+		c_n->content string: (str start)
+
+01234567890123456(str end)
+		c_n->cont_size: 19
+		c_n->line_sep pointer: 0x7fcbd5405950
+		c_n->line_sep string: (str start)
+
+01234567890123456(str end)
+		c_n->next: 0x7fcbd54058d0
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd54058d0
+		c_n->content pointer: 0x7fcbd54058f0
+		c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd5405909
+		c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+		c_n->next: 0x7fcbd5405800
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)1234567890123456789x12(str end)
+		c_n->cont_size: 22
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+main: get_next_line:
+0123456789012345678901234567890123456789x5
+
+main: loop 5
+
+	get_next_line at start:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405800
+	b_i->chunk_list: 0x7fcbd5405930
+	b_i->line pointer: 0x7fcbd5405990
+	b_i->line string: (str start)0123456789012345678901234567890123456789x5
+(str end)
+	b_i->line_end pointer: 0x7fcbd54059bb
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 34
+	b_i->read_res: 0
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405930
+		c_n->content pointer: 0x7fcbd5405950
+		c_n->content string: (str start)
+
+01234567890123456(str end)
+		c_n->cont_size: 19
+		c_n->line_sep pointer: 0x7fcbd5405950
+		c_n->line_sep string: (str start)
+
+01234567890123456(str end)
+		c_n->next: 0x7fcbd54058d0
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd54058d0
+		c_n->content pointer: 0x7fcbd54058f0
+		c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd5405909
+		c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+		c_n->next: 0x7fcbd5405800
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)1234567890123456789x12(str end)
+		c_n->cont_size: 22
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+
+		ft_append_next_chunk at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 19
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)
+
+01234567890123456(str end)
+			c_n->cont_size: 19
+			c_n->line_sep pointer: 0x7fcbd5405950
+			c_n->line_sep string: (str start)
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk after malloc:
+
+		ft_append_next_chunk before read:
+
+			ft_read_chunk at start:
+
+			ft_read_chunk before malloc:
+
+			ft_read_chunk after malloc:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before free:
+
+			ft_read_chunk after free:
+
+			ft_read_chunk before return:
+
+		ft_append_next_chunk after read:
+
+		ft_append_next_chunk before free:
+
+		ft_append_next_chunk before return:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 19
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)
+
+01234567890123456(str end)
+			c_n->cont_size: 19
+			c_n->line_sep pointer: 0x7fcbd5405950
+			c_n->line_sep string: (str start)
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 19
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)
+
+01234567890123456(str end)
+			c_n->cont_size: 19
+			c_n->line_sep pointer: 0x7fcbd5405950
+			c_n->line_sep string: (str start)
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x7fcbd54059c0
+		b_i->line string: (str start)(str end)
+		b_i->line_end pointer: 0x7fcbd54059c0
+		b_i->line_end string: (str start)(str end)
+		b_i->line_size: 19
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)
+
+01234567890123456(str end)
+			c_n->cont_size: 19
+			c_n->line_sep pointer: 0x7fcbd5405950
+			c_n->line_sep string: (str start)
+
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+			ft_extract_end_line_from_chunk at start:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405800
+			b_i->chunk_list: 0x7fcbd5405930
+			b_i->line pointer: 0x7fcbd54059c0
+			b_i->line string: (str start)(str end)
+			b_i->line_end pointer: 0x7fcbd54059c0
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 19
+			b_i->read_res: 0
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)
+
+01234567890123456(str end)
+				c_n->cont_size: 19
+				c_n->line_sep pointer: 0x7fcbd5405950
+				c_n->line_sep string: (str start)
+
+01234567890123456(str end)
+				c_n->next: 0x7fcbd54058d0
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd54058d0
+				c_n->content pointer: 0x7fcbd54058f0
+				c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd5405909
+				c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+				c_n->next: 0x7fcbd5405800
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)1234567890123456789x12(str end)
+				c_n->cont_size: 22
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+			ft_extract_end_line_from_chunk before return:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405800
+			b_i->chunk_list: 0x7fcbd5405930
+			b_i->line pointer: 0x7fcbd54059c0
+			b_i->line string: (str start)
+(str end)
+			b_i->line_end pointer: 0x7fcbd54059c1
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 19
+			b_i->read_res: 0
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)
+01234567890123456(str end)
+				c_n->cont_size: 18
+				c_n->line_sep pointer: 0x7fcbd5405950
+				c_n->line_sep string: (str start)
+01234567890123456(str end)
+				c_n->next: 0x7fcbd54058d0
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd54058d0
+				c_n->content pointer: 0x7fcbd54058f0
+				c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd5405909
+				c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+				c_n->next: 0x7fcbd5405800
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)1234567890123456789x12(str end)
+				c_n->cont_size: 22
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+get_next_line before return:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405800
+	b_i->chunk_list: 0x7fcbd5405930
+	b_i->line pointer: 0x7fcbd54059c0
+	b_i->line string: (str start)
+(str end)
+	b_i->line_end pointer: 0x7fcbd54059c1
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 19
+	b_i->read_res: 0
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405930
+		c_n->content pointer: 0x7fcbd5405950
+		c_n->content string: (str start)
+01234567890123456(str end)
+		c_n->cont_size: 18
+		c_n->line_sep pointer: 0x7fcbd5405950
+		c_n->line_sep string: (str start)
+01234567890123456(str end)
+		c_n->next: 0x7fcbd54058d0
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd54058d0
+		c_n->content pointer: 0x7fcbd54058f0
+		c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd5405909
+		c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+		c_n->next: 0x7fcbd5405800
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)1234567890123456789x12(str end)
+		c_n->cont_size: 22
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+main: get_next_line:
+
+
+main: loop 6
+
+	get_next_line at start:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405800
+	b_i->chunk_list: 0x7fcbd5405930
+	b_i->line pointer: 0x7fcbd54059c0
+	b_i->line string: (str start)
+(str end)
+	b_i->line_end pointer: 0x7fcbd54059c1
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 19
+	b_i->read_res: 0
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405930
+		c_n->content pointer: 0x7fcbd5405950
+		c_n->content string: (str start)
+01234567890123456(str end)
+		c_n->cont_size: 18
+		c_n->line_sep pointer: 0x7fcbd5405950
+		c_n->line_sep string: (str start)
+01234567890123456(str end)
+		c_n->next: 0x7fcbd54058d0
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd54058d0
+		c_n->content pointer: 0x7fcbd54058f0
+		c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd5405909
+		c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+		c_n->next: 0x7fcbd5405800
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)1234567890123456789x12(str end)
+		c_n->cont_size: 22
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+
+		ft_append_next_chunk at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 18
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)
+01234567890123456(str end)
+			c_n->cont_size: 18
+			c_n->line_sep pointer: 0x7fcbd5405950
+			c_n->line_sep string: (str start)
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk after malloc:
+
+		ft_append_next_chunk before read:
+
+			ft_read_chunk at start:
+
+			ft_read_chunk before malloc:
+
+			ft_read_chunk after malloc:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before free:
+
+			ft_read_chunk after free:
+
+			ft_read_chunk before return:
+
+		ft_append_next_chunk after read:
+
+		ft_append_next_chunk before free:
+
+		ft_append_next_chunk before return:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 18
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)
+01234567890123456(str end)
+			c_n->cont_size: 18
+			c_n->line_sep pointer: 0x7fcbd5405950
+			c_n->line_sep string: (str start)
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 18
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)
+01234567890123456(str end)
+			c_n->cont_size: 18
+			c_n->line_sep pointer: 0x7fcbd5405950
+			c_n->line_sep string: (str start)
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x7fcbd54059c0
+		b_i->line string: (str start)(str end)
+		b_i->line_end pointer: 0x7fcbd54059c0
+		b_i->line_end string: (str start)(str end)
+		b_i->line_size: 18
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)
+01234567890123456(str end)
+			c_n->cont_size: 18
+			c_n->line_sep pointer: 0x7fcbd5405950
+			c_n->line_sep string: (str start)
+01234567890123456(str end)
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+			ft_extract_end_line_from_chunk at start:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405800
+			b_i->chunk_list: 0x7fcbd5405930
+			b_i->line pointer: 0x7fcbd54059c0
+			b_i->line string: (str start)(str end)
+			b_i->line_end pointer: 0x7fcbd54059c0
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 18
+			b_i->read_res: 0
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)
+01234567890123456(str end)
+				c_n->cont_size: 18
+				c_n->line_sep pointer: 0x7fcbd5405950
+				c_n->line_sep string: (str start)
+01234567890123456(str end)
+				c_n->next: 0x7fcbd54058d0
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd54058d0
+				c_n->content pointer: 0x7fcbd54058f0
+				c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd5405909
+				c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+				c_n->next: 0x7fcbd5405800
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)1234567890123456789x12(str end)
+				c_n->cont_size: 22
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+			ft_extract_end_line_from_chunk before return:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405800
+			b_i->chunk_list: 0x7fcbd5405930
+			b_i->line pointer: 0x7fcbd54059c0
+			b_i->line string: (str start)
+(str end)
+			b_i->line_end pointer: 0x7fcbd54059c1
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 18
+			b_i->read_res: 0
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)01234567890123456(str end)
+				c_n->cont_size: 17
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x7fcbd54058d0
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd54058d0
+				c_n->content pointer: 0x7fcbd54058f0
+				c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd5405909
+				c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+				c_n->next: 0x7fcbd5405800
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)1234567890123456789x12(str end)
+				c_n->cont_size: 22
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+get_next_line before return:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405800
+	b_i->chunk_list: 0x7fcbd5405930
+	b_i->line pointer: 0x7fcbd54059c0
+	b_i->line string: (str start)
+(str end)
+	b_i->line_end pointer: 0x7fcbd54059c1
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 18
+	b_i->read_res: 0
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405930
+		c_n->content pointer: 0x7fcbd5405950
+		c_n->content string: (str start)01234567890123456(str end)
+		c_n->cont_size: 17
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x7fcbd54058d0
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd54058d0
+		c_n->content pointer: 0x7fcbd54058f0
+		c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd5405909
+		c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+		c_n->next: 0x7fcbd5405800
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)1234567890123456789x12(str end)
+		c_n->cont_size: 22
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+main: get_next_line:
+
+
+main: loop 7
+
+	get_next_line at start:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405800
+	b_i->chunk_list: 0x7fcbd5405930
+	b_i->line pointer: 0x7fcbd54059c0
+	b_i->line string: (str start)
+(str end)
+	b_i->line_end pointer: 0x7fcbd54059c1
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 18
+	b_i->read_res: 0
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd5405930
+		c_n->content pointer: 0x7fcbd5405950
+		c_n->content string: (str start)01234567890123456(str end)
+		c_n->cont_size: 17
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x7fcbd54058d0
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd54058d0
+		c_n->content pointer: 0x7fcbd54058f0
+		c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+		c_n->cont_size: 50
+		c_n->line_sep pointer: 0x7fcbd5405909
+		c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+		c_n->next: 0x7fcbd5405800
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)1234567890123456789x12(str end)
+		c_n->cont_size: 22
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+
+		ft_append_next_chunk at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 17
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)01234567890123456(str end)
+			c_n->cont_size: 17
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk after malloc:
+
+		ft_append_next_chunk before read:
+
+			ft_read_chunk at start:
+
+			ft_read_chunk before malloc:
+
+			ft_read_chunk after malloc:
+
+			ft_read_chunk before read:
+
+			ft_read_chunk before free:
+
+			ft_read_chunk after free:
+
+			ft_read_chunk before return:
+
+		ft_append_next_chunk after read:
+
+		ft_append_next_chunk before free:
+
+		ft_append_next_chunk before return:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 17
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)01234567890123456(str end)
+			c_n->cont_size: 17
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 17
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)01234567890123456(str end)
+			c_n->cont_size: 17
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x7fcbd54059c0
+		b_i->line string: (str start)(str end)
+		b_i->line_end pointer: 0x7fcbd54059c0
+		b_i->line_end string: (str start)(str end)
+		b_i->line_size: 17
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)01234567890123456(str end)
+			c_n->cont_size: 17
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_pop_next_line at iteration:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd5405930
+		b_i->line pointer: 0x7fcbd54059c0
+		b_i->line string: (str start)01234567890123456(str end)
+		b_i->line_end pointer: 0x7fcbd54059d1
+		b_i->line_end string: (str start)(str end)
+		b_i->line_size: 17
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd5405930
+			c_n->content pointer: 0x7fcbd5405950
+			c_n->content string: (str start)01234567890123456(str end)
+			c_n->cont_size: 17
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x7fcbd54058d0
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 50
+			c_n->line_sep pointer: 0x7fcbd5405909
+			c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+			ft_extract_end_line_from_chunk at start:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405800
+			b_i->chunk_list: 0x7fcbd5405930
+			b_i->line pointer: 0x7fcbd54059c0
+			b_i->line string: (str start)01234567890123456(str end)
+			b_i->line_end pointer: 0x7fcbd54059d1
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 17
+			b_i->read_res: 0
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd5405930
+				c_n->content pointer: 0x7fcbd5405950
+				c_n->content string: (str start)01234567890123456(str end)
+				c_n->cont_size: 17
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x7fcbd54058d0
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd54058d0
+				c_n->content pointer: 0x7fcbd54058f0
+				c_n->content string: (str start)78901234567890123456789x8
+
+
+
+012345678901234567890(str end)
+				c_n->cont_size: 50
+				c_n->line_sep pointer: 0x7fcbd5405909
+				c_n->line_sep string: (str start)
+
+
+
+012345678901234567890(str end)
+				c_n->next: 0x7fcbd5405800
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)1234567890123456789x12(str end)
+				c_n->cont_size: 22
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+			ft_extract_end_line_from_chunk before return:
+
+			Info -----
+			b_i->fd: 3
+			b_i->buffer_size: 10
+			b_i->chunk_last: 0x7fcbd5405800
+			b_i->chunk_list: 0x7fcbd54058d0
+			b_i->line pointer: 0x7fcbd54059c0
+			b_i->line string: (str start)0123456789012345678901234567890123456789x8
+(str end)
+			b_i->line_end pointer: 0x7fcbd54059eb
+			b_i->line_end string: (str start)(str end)
+			b_i->line_size: 17
+			b_i->read_res: 0
+
+			chunk list start -----
+
+				Start Node Data
+				c_n: 0x7fcbd54058d0
+				c_n->content pointer: 0x7fcbd54058f0
+				c_n->content string: (str start)
+
+
+012345678901234567890(str end)
+				c_n->cont_size: 24
+				c_n->line_sep pointer: 0x7fcbd54058f0
+				c_n->line_sep string: (str start)
+
+
+012345678901234567890(str end)
+				c_n->next: 0x7fcbd5405800
+
+				End Node Data
+				Start Node Data
+				c_n: 0x7fcbd5405800
+				c_n->content pointer: 0x7fcbd5405820
+				c_n->content string: (str start)1234567890123456789x12(str end)
+				c_n->cont_size: 22
+				c_n->line_sep pointer: 0x0
+				c_n->next: 0x0
+
+				End Node Data
+			chunk list end -----
+			End Info -----
+
+get_next_line before return:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405800
+	b_i->chunk_list: 0x7fcbd54058d0
+	b_i->line pointer: 0x7fcbd54059c0
+	b_i->line string: (str start)0123456789012345678901234567890123456789x8
+(str end)
+	b_i->line_end pointer: 0x7fcbd54059eb
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 17
+	b_i->read_res: 0
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd54058d0
+		c_n->content pointer: 0x7fcbd54058f0
+		c_n->content string: (str start)
+
+
+012345678901234567890(str end)
+		c_n->cont_size: 24
+		c_n->line_sep pointer: 0x7fcbd54058f0
+		c_n->line_sep string: (str start)
+
+
+012345678901234567890(str end)
+		c_n->next: 0x7fcbd5405800
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)1234567890123456789x12(str end)
+		c_n->cont_size: 22
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+main: get_next_line:
+0123456789012345678901234567890123456789x8
+
+main: loop 8
+
+	get_next_line at start:
+
+	Info -----
+	b_i->fd: 3
+	b_i->buffer_size: 10
+	b_i->chunk_last: 0x7fcbd5405800
+	b_i->chunk_list: 0x7fcbd54058d0
+	b_i->line pointer: 0x7fcbd54059c0
+	b_i->line string: (str start)0123456789012345678901234567890123456789x8
+(str end)
+	b_i->line_end pointer: 0x7fcbd54059eb
+	b_i->line_end string: (str start)(str end)
+	b_i->line_size: 17
+	b_i->read_res: 0
+
+	chunk list start -----
+
+		Start Node Data
+		c_n: 0x7fcbd54058d0
+		c_n->content pointer: 0x7fcbd54058f0
+		c_n->content string: (str start)
+
+
+012345678901234567890(str end)
+		c_n->cont_size: 24
+		c_n->line_sep pointer: 0x7fcbd54058f0
+		c_n->line_sep string: (str start)
+
+
+012345678901234567890(str end)
+		c_n->next: 0x7fcbd5405800
+
+		End Node Data
+		Start Node Data
+		c_n: 0x7fcbd5405800
+		c_n->content pointer: 0x7fcbd5405820
+		c_n->content string: (str start)1234567890123456789x12(str end)
+		c_n->cont_size: 22
+		c_n->line_sep pointer: 0x0
+		c_n->next: 0x0
+
+		End Node Data
+	chunk list end -----
+	End Info -----
+
+		ft_append_next_chunk at start:
+
+		Info -----
+		b_i->fd: 3
+		b_i->buffer_size: 10
+		b_i->chunk_last: 0x7fcbd5405800
+		b_i->chunk_list: 0x7fcbd54058d0
+		b_i->line pointer: 0x0
+		b_i->line_end pointer: 0x0
+		b_i->line_size: 24
+		b_i->read_res: 0
+
+		chunk list start -----
+
+			Start Node Data
+			c_n: 0x7fcbd54058d0
+			c_n->content pointer: 0x7fcbd54058f0
+			c_n->content string: (str start)
+
+
+012345678901234567890(str end)
+			c_n->cont_size: 24
+			c_n->line_sep pointer: 0x7fcbd54058f0
+			c_n->line_sep string: (str start)
+
+
+012345678901234567890(str end)
+			c_n->next: 0x7fcbd5405800
+
+			End Node Data
+			Start Node Data
+			c_n: 0x7fcbd5405800
+			c_n->content pointer: 0x7fcbd5405820
+			c_n->content string: (str start)1234567890123456789x12(str end)
+			c_n->cont_size: 22
+			c_n->line_sep pointer: 0x0
+			c_n->next: 0x0
+
+			End Node Data
+		chunk list end -----
+		End Info -----
+
+		ft_append_next_chunk after malloc:
+
+		ft_append_next_chunk before read:
+
+			ft_read_chunk at start:
+
+			ft_read_chunk before malloc:
+
+a.out(29221,0x10c535dc0) malloc: Incorrect checksum for freed object 0x7fcbd54059e8: probably modified after being freed.
+Corrupt value: 0x60000000000a3878
+a.out(29221,0x10c535dc0) malloc: *** set a breakpoint in malloc_error_break to debug
+zsh: abort      ./a.out variable_nls.txt > res.out
