@@ -6,12 +6,11 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/28 17:35:21 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:51:56 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
-#include <stdio.h>
 #include <fcntl.h>
 
 #define MIN_CHUNK_SIZE 1
