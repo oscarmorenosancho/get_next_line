@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/28 18:08:07 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/28 19:03:14 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,20 +78,20 @@ char	*ft_read_next_line(int fd, t_get_next_l *gnls)
 
 	gnls->r_r = ft_get_nxt_ck(fd, &st.nw_chk, MIN_CHUNK_SIZE, BUFFER_SIZE);
 	if (gnls->r_r == FAIL_MEM_ALLOC_READ_RET && gnls->buf)
+	{
+		free_x((void **)&gnls->buf);
 		return (NULL);
+	}
 	if (! gnls->buf && ! st.nw_chk)
-		return (0);
+		return (NULL);
 	if (st.nw_chk)
 	{
 		st.j_err = ft_strjn_x(&(gnls->buf), &(gnls->buf), &st.nw_chk, \
 			SJ_E_FR_S1);
-		if (st.nw_chk)
-			free_x((void **)&st.nw_chk);
+		free_x((void **)&st.nw_chk);
 		if (st.j_err)
 			return (NULL);
 	}
-	if (!(gnls->buf && gnls->r_r >= 0))
-		return (NULL);
 	if (! ft_extract_line_from_buf(gnls) && gnls->buf && gnls->r_r == 0)
 	{
 		gnls->line = gnls->buf;
