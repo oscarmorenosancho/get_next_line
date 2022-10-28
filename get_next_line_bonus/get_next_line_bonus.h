@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:51:04 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/28 17:05:51 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/28 18:26:56 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,12 @@ typedef struct s_substr_ext
 	size_t	s_len;
 	size_t	ss_len;
 }	t_substr_ext;
+
+typedef struct s_get_nxt_ck
+{
+	int		read_ret;
+	size_t	total_read;
+}	t_get_nxt_ck;
 
 typedef struct s_ext_l_from_buf
 {

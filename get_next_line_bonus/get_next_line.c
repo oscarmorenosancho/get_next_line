@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/28 17:51:55 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/28 18:08:07 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,31 +28,29 @@ void	free_x(void **p)
 int	ft_get_nxt_ck(int fd, char **chunk, \
 	size_t	chunk_size, size_t	buffer_size)
 {
-	int		read_ret;
-	size_t	total_read;
+	t_get_nxt_ck	s;
 
-	read_ret = 1;
-	total_read = 0;
+	s.read_ret = 1;
+	s.total_read = 0;
 	if (buffer_size > chunk_size)
 		chunk_size = buffer_size;
 	*chunk = (char *)malloc(chunk_size + 1);
 	if (! *chunk)
 		return (FAIL_MEM_ALLOC_READ_RET);
-	while (read_ret > 0 && (chunk_size - total_read) >= buffer_size)
+	while (s.read_ret > 0 && (chunk_size - s.total_read) >= buffer_size)
 	{
-		read_ret = read(fd, *chunk + total_read, buffer_size);
-		if (read_ret > 0)
-			total_read += read_ret;
-		if (read_ret < 0 || total_read == 0)
+		s.read_ret = read(fd, *chunk + s.total_read, buffer_size);
+		if (s.read_ret > 0)
+			s.total_read += s.read_ret;
+		if (s.read_ret < 0 || s.total_read == 0)
 		{
 			free_x((void **)chunk);
-			*chunk = NULL;
-			total_read = read_ret;
+			s.total_read = s.read_ret;
 		}
 		else
-			(*chunk)[total_read] = 0;
+			(*chunk)[s.total_read] = 0;
 	}
-	return (total_read);
+	return (s.total_read);
 }
 
 char	*ft_extract_line_from_buf(t_get_next_l *gnls)
