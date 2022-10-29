@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/29 10:29:59 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/29 10:29:11 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 #include <stdio.h>
 #include <fcntl.h>
 
@@ -104,28 +104,28 @@ char	*ft_extract_line_from_buf(char **buffer, size_t	buf_size)
 
 char	*get_next_line(int fd)
 {
-	static char	*buffer;
+	static char	*buffer[MAX_OPEN];
 	char		*line;
 	int			read_ret;
 
-	if (fd < 0 || BUFFER_SIZE < 1)
+	if (fd < 0 || fd >= MAX_OPEN || BUFFER_SIZE < 1)
 		return (NULL);
 	read_ret = read(fd, NULL, 0);
 	read_ret = read_ret >= 0;
 	line = NULL;
 	while ((read_ret > 0) && !line)
 	{
-		if (ft_append_chunk_to_buf(fd, &buffer, &read_ret) && read_ret >= 0)
-			line = ft_extract_line_from_buf(&buffer, ft_strlen(buffer));
-		if (!line && buffer && read_ret == 0)
+		if (ft_append_chunk_to_buf(fd, &buffer[fd], &read_ret) && read_ret >= 0)
+			line = ft_extract_line_from_buf(&buffer[fd], ft_strlen(buffer[fd]));
+		if (!line && buffer[fd] && read_ret == 0)
 		{
-			line = buffer;
-			buffer = NULL;
+			line = buffer[fd];
+			buffer[fd] = NULL;
 		}
 	}
 	if (line && (read_ret < 0 || !line[0]))
 		free_x ((void **)&line);
-	if (buffer && (read_ret < 0 || !line))
-		free_x ((void **)&buffer);
+	if (buffer[fd] && (read_ret < 0 || !line))
+		free_x ((void **)&buffer[fd]);
 	return (line);
 }
