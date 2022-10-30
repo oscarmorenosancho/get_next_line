@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:49:28 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/29 15:55:31 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/30 10:10:42 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,14 +99,14 @@ char	*ft_substr_empty2null(char const *s, unsigned int start,
 	return (ss);
 }
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strnl(const char *s)
 {
 	char	*p;
 
 	p = (char *)s;
-	while (*p && *p != (char)c)
+	while (*p && *p != '\n')
 		p++;
-	if (*p != (char)c)
+	if (*p != '\n')
 		return (NULL);
 	return (p);
 }

@@ -6,7 +6,7 @@
 /*   By: omoreno- <omoreno-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:22:42 by omoreno-          #+#    #+#             */
-/*   Updated: 2022/10/29 16:17:16 by omoreno-         ###   ########.fr       */
+/*   Updated: 2022/10/30 10:38:19 by omoreno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,33 +21,32 @@ void	free_x(void **p)
 	}
 }
 
-static int	ft_get_next_chunk(int fd, char **chunk, \
-	size_t	chunk_size, size_t	buffer_size)
+static int	ft_get_next_chunk(int fd, char **cnk, size_t cnk_s, size_t buf_s)
 {
-	int		read_ret;
-	size_t	total_read;
+	t_get_next_chunk	s;
 
-	read_ret = 1;
-	total_read = 0;
-	if (buffer_size > chunk_size)
-		chunk_size = buffer_size;
-	*chunk = (char *)malloc(chunk_size + 1);
-	if (! *chunk)
+	s.r_r = 1;
+	s.tot_r = 0;
+	s.nl_pos = NULL;
+	if (buf_s > cnk_s)
+		cnk_s = buf_s;
+	*cnk = (char *)malloc(cnk_s + 1);
+	if (! *cnk)
 		return (FAIL_MEM_ALLOC_READ_RET);
-	while (read_ret > 0 && (chunk_size - total_read) >= buffer_size)
+	while (s.r_r > 0 && cnk_s - s.tot_r >= buf_s && ! s.nl_pos)
 	{
-		read_ret = read(fd, *chunk + total_read, buffer_size);
-		if (read_ret > 0)
-			total_read += read_ret;
-		if (read_ret < 0 || total_read == 0)
+		s.r_r = read(fd, *cnk + s.tot_r, buf_s);
+		(*cnk)[s.tot_r + buf_s] = 0;
+		s.nl_pos = ft_strnl(*cnk + s.tot_r);
+		if (s.r_r > 0)
+			s.tot_r += s.r_r;
+		if (s.r_r < 0 || s.tot_r == 0)
 		{
-			free_x((void **)chunk);
-			total_read = read_ret;
+			free_x((void **)cnk);
+			s.tot_r = s.r_r;
 		}
-		else
-			(*chunk)[total_read] = 0;
 	}
-	return (total_read);
+	return (s.tot_r);
 }
 
 static char	*ft_extract_line_from_buf(char **buffer, size_t	buf_size)
@@ -58,7 +57,7 @@ static char	*ft_extract_line_from_buf(char **buffer, size_t	buf_size)
 
 	if (! *buffer)
 		return (NULL);
-	p = ft_strchr(*buffer, '\n');
+	p = ft_strnl(*buffer);
 	if (! p)
 		return (NULL);
 	line_size = p - *buffer + 1;
